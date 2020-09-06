@@ -32,7 +32,7 @@ for ($x = 0; $x <= 10; $x++) {
 	
   </div>
   <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
+        <small class="text-muted"></small>
       </div>
 </div></div>';
 	
