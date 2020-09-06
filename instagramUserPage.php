@@ -12,22 +12,7 @@
   </head>
   <body class="container-fluid">
 <?php
-/* $url = 'https://www.instagram.com/jcjoanclayton/?__a=1';
-$instagramJson = file_get_contents($url);
-
-
-$username = @$_REQUEST['username'];
-
-$obj = json_decode($instagramJson);
-$imageCount = count($obj->{'graphql'}->{'user'}->{'edge_owner_to_timeline_media'}->{'edges'});
-for ($x = 0; $x <= 10; $x++) {
-	$imagePath = $obj->{'graphql'}->{'user'}->{'edge_owner_to_timeline_media'}->{'edges'}[$x]->{'node'}->{'display_url'};
-	$imageText = $obj->{'graphql'}->{'user'}->{'edge_owner_to_timeline_media'}->{'edges'}[$x]->{'node'}->{'edge_media_to_caption'}->{'edges'}[0]->{'node'}->{'text'};
-  echo "<img src='$imagePath'><br>$imageText<br>";
-  
-} */
-///////////////////////////////////////
-$url = 'https://www.instagram.com/jcjoanclayton/?__a=1';
+$url = 'https://www.instagram.com/$username/?__a=1';
 $instagramJson = file_get_contents($url);
 
 
@@ -55,15 +40,9 @@ for ($x = 0; $x <= 10; $x++) {
   
 }
 echo '</div>';
-////////////////////////////////////////
-
-///////////////////////////////////////
-$url = 'https://www.instagram.com/clayton_joan/?__a=1';
+$url = "https://www.instagram.com/$username/?__a=1";
 $instagramJson = file_get_contents($url);
-
-
 $username = @$_REQUEST['username'];
-
 $obj = json_decode($instagramJson);
 $imageCount = count($obj->{'graphql'}->{'user'}->{'edge_owner_to_timeline_media'}->{'edges'});
 echo '<div class="row row-cols-1 row-cols-md-3 g-4">';
@@ -87,19 +66,7 @@ for ($x = 0; $x <= 10; $x++) {
 }
 echo '</div>';
 ////////////////////////////////////////
-
-
-
-
-
-
-
-
-
-
-
-
-
+//12 images to look at
 //print_r($instagramJson);
 //$json= json_decode($instagramJson, true);
 //print $obj->{'logging_page_id'}; // 12345
@@ -133,7 +100,7 @@ print_r($obj->{'graphql'}->{'user'}->{'edge_owner_to_timeline_media'}->{'edges'}
 //print_r(json_decode($instagramJson, true));
 
 //print_r($obj->{'graphql'}->{'user'}->{'edge_owner_to_timeline_media'}) ; // 12345 
-https://v5.getbootstrap.com/
+testing version 5 bootstrap https://v5.getbootstrap.com/
 */
 ?>
     <!-- Optional JavaScript -->
@@ -142,4 +109,3 @@ https://v5.getbootstrap.com/
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
   </body>
 </html>
-
