@@ -16,7 +16,7 @@ $url = 'https://www.instagram.com/$username/?__a=1';
 $instagramJson = file_get_contents($url);
 
 
-$username = @$_REQUEST['username'];
+$username = "festivalsintoronto";
 
 $obj = json_decode($instagramJson);
 $imageCount = count($obj->{'graphql'}->{'user'}->{'edge_owner_to_timeline_media'}->{'edges'});
