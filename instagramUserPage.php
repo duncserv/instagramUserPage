@@ -12,7 +12,7 @@
   </head>
   <body class="container-fluid">
 <?php
-$url = 'https://www.instagram.com/$username/?__a=1';
+$url = 'https://www.instagram.com/festivalsintoronto/?__a=1';
 $instagramJson = file_get_contents($url);
 
 
